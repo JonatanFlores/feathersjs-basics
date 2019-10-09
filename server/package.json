@@ -1,0 +1,54 @@
+{
+  "name": "itconnector-backend",
+  "version": "1.0.0",
+  "description": "API Backend for ITConnector Social Network",
+  "main": "server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js --ignore __tests__",
+    "pretest": "cross-env NODE_ENV=test sequelize db:migrate",
+    "test": "cross-env NODE_ENV=test jest",
+    "posttest": "cross-env NODE_ENV=test sequelize db:migrate:undo:all"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonatanflores/itconnector.git"
+  },
+  "keywords": [
+    "API",
+    "Backend",
+    "ITConnector",
+    "Social",
+    "Network"
+  ],
+  "author": "Jonatan Flores <jonatafloress@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jonatanflores/itconnector/issues"
+  },
+  "homepage": "https://github.com/jonatanflores/itconnector#readme",
+  "dependencies": {
+    "@feathersjs/express": "^4.3.5",
+    "@feathersjs/feathers": "^4.3.4",
+    "@feathersjs/socketio": "^4.3.5",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^8.1.0",
+    "express-validator": "^6.2.0",
+    "factory-girl": "^5.0.4",
+    "faker": "^4.1.0",
+    "gravatar": "^1.8.0",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.24.0",
+    "pg": "^7.12.1",
+    "request": "^2.88.0",
+    "sequelize": "^5.19.2"
+  },
+  "devDependencies": {
+    "cross-env": "^6.0.3",
+    "jest": "^24.9.0",
+    "nodemon": "^1.19.3",
+    "sequelize-cli": "^5.5.1",
+    "sqlite3": "^4.1.0",
+    "supertest": "^4.0.2"
+  }
+}
