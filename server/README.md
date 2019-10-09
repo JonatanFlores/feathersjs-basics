@@ -1,3 +1,3 @@
-# ITConnector
+# Backend Application
 
-Bakend for a Social Network for people working with Information Technology
+Information about the application
