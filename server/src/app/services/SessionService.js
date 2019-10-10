@@ -1,4 +1,4 @@
-const { BadRequest } = require('@feathersjs/errors');
+const { BadRequest } = require("@feathersjs/errors");
 
 const { User } = require("../models");
 
@@ -24,4 +24,4 @@ class SessionService {
   }
 }
 
-module.exports = new SessionService;
+module.exports = new SessionService();
